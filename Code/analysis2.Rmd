@@ -1,0 +1,243 @@
+---
+title: "DRTO2023"
+author: "ross"
+date: "06/20/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rio)
+library(parzer)
+library(tidyverse)
+library(lubridate)
+library(magrittr)
+```
+
+# GPS Points
+
+```{r}
+# Read in coral collection info
+md <- rio::import("Collections.xlsx", sheet = "CollectionNotes") %>% 
+  separate(time, c(NA,"time"), sep = " ") %>% 
+  unite(date_time, dateCollected, time, sep = " ") %>%
+  mutate(date_time = ymd_hms(date_time))# %>% 
+  #write_csv("../Data/colony_metadata_parsed.csv")
+
+# Read in GPS tracks
+
+## List GPS track files
+gps_track_files <- list.files("data/GPS", pattern = "*.csv", full.names = TRUE)
+
+## Read in all GPS track files into single dataframe
+gps_tracks <- NULL
+for (i in gps_track_files) {
+  serial <- substr(i,nchar("data/GPS/GPS_") + 1, nchar("data/GPS/GPS_") + 4)
+  gps_single <- rio::import(i, skip = 34)
+  add = max(gps_single$ID)
+  gps <- rio::import(i, skip = (40 + (add * 2))) %>% 
+    dplyr::mutate(gps_id = as.numeric(serial)) %>% 
+    relocate(gps_id) 
+  gps_tracks <- plyr::rbind.fill(gps_tracks, gps)
+}
+
+## Format date and time in correct time zone for GPS tracks
+gps_tracks <- gps_tracks %>%
+  unique() %>% 
+  select(gps_id, time, lat, lon) %>%
+  mutate(date_time = as_datetime(time, tz = "US/Eastern"),
+         date_time_min = format(date_time, "%H:%M"))# %>% 
+  #write_csv("../Outputs/GPS_allTracks.csv")
+
+# Set seconds values for all times to zero
+second(gps_tracks$date_time) <- 0
+
+# Get last lat/lon recorded for each discrete minute
+gps_tracks <- gps_tracks %>%
+  group_by(gps_id, date_time) %>%
+  summarise(across(everything(), last)) %>% 
+  dplyr::select(-c(date_time_min)) %>% 
+  dplyr::mutate(date_time = lubridate::ymd_hms(date_time)) 
+
+# Pull coral lat/lon from gps tracks based on date/time sampled (recorded as the nearest minute)
+df <- left_join(md, gps_tracks, by = c("gps" = "gps_id", "date_time"))
+ 
+# Write lat/lon to file
+  write_csv("../Outputs/GPS_collectionCoordinates.csv")
+```
+
+# HOBO Loggers
+
+```{r}
+source("hoboDHWs.R")
+runs <- list.dirs(path = "../Data/HOBOs", recursive = FALSE, full.names = TRUE)
+hobo <- NULL
+
+for (day in runs) {
+  name <- substr(day,nchar("../Data/HOBOs/")+1,nchar(day))
+  hoboDay <- adew.package::hoboDHWs(path = day, summary = FALSE, calc = FALSE) %>% 
+    tidyr::separate(Group, c("Tank"), sep = " ") %>% 
+    dplyr::mutate(dateCBASS = name)
+  hobo <- plyr::rbind.fill(hobo,hoboDay)
+}
+
+#Incorporate 06/19/23 Calibration
+calibrations <- hobo %>% 
+  dplyr::filter(dateCBASS == "calibration") %>% 
+  dplyr::mutate(Use = case_when(Tank == "CBASS_Spare" ~ "30C",
+                                Tank == "30C" ~ "38C_2",
+                                TRUE ~ Tank))
+
+manualCal <- rio::import("../Data/HOBOs/calibration.xlsx") %>% 
+  dplyr::select(time:thermBaker,Tank = hoboTemp) %>% 
+  tidyr::separate(time, c(NA,"DateTime"), sep = " ") %>% 
+  dplyr::mutate(Tank = case_when(Tank == "Spare" ~ "CBASS-Spare",
+                                     TRUE ~ paste0(Tank,"C")),
+                DateTime = lubridate::ymd_hms(paste(lubridate::ymd("2023-06-19"), DateTime, sep = " "))) %>% 
+  dplyr::group_by(calTemp) %>% 
+  dplyr::mutate(firstMin = first(DateTime),
+                lastMin = last(DateTime)) %>% 
+  dplyr::select(-c(DateTime)) %>% 
+  ungroup()
+
+calibrations2 <- calibrations %>% 
+  left_join(manualCal) %>% 
+  dplyr::filter(DateTime >= firstMin & DateTime <= lastMin) %>% 
+  dplyr::group_by(calTemp,Tank) %>% 
+  dplyr::summarise(mean = mean(`Temperature °C`)) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::group_by(calTemp) %>% 
+  dplyr::mutate(median = median(mean),
+                offset = median - mean) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::group_by(Tank) %>% 
+  dplyr::summarise(offset = mean(offset))
+
+#Finalize
+hobo %<>%
+  left_join(calibrations2) %>% 
+  dplyr::mutate(rawTempC = `Temperature °C`,
+                `Temperature °C` = rawTempC - offset,
+                Tank = case_when(Tank == "38C_2" ~ "38C",
+                                 TRUE ~ Tank)) %>% 
+  write_csv("../Data/HOBOs/HOBOfiles_all.csv") %>% 
+  dplyr::filter(dateCBASS != "calibration") %>% 
+  write_csv("../Outputs/CBASS_HOBOfiles.csv")
+
+hobo %>% 
+  ggplot(aes(DateTime,`Temperature °C`)) +
+  geom_path(aes(color = Tank)) +
+  scale_color_brewer(palette = "Reds") +
+  facet_wrap(~dateCBASS, scale = "free_x")
+```
+
+# IPAM 
+
+```{r ipam}
+runs <- c("2023-06-20",
+          "2023-06-21",
+          "2023-06-22",
+          "2023-06-23",
+          "2023-06-24",
+          "2023-06-26",
+          "2023-06-27",
+          "2023-06-30")
+
+for (i in runs) {
+  date = i
+  # Find the data for the day based on 'dates' above
+  data.dir = paste0("../Data/IPAM/",date,"/pam") 
+  # Where the daily joined data will be stored for later compilation
+  export.dir = "../Data/IPAM/working"
+  
+  import = adew.package::imPAM(data.dir,NULL) %>% 
+    tidyr::separate(file, into = c("file","Temp","rack.col")) %>% 
+    dplyr::mutate(file = as.numeric(file),
+                  Temp = as.numeric(Temp)) %>% 
+    dplyr::rename("rack.position" = AOI) %T>% 
+    write_csv(paste0(export.dir,"/",date,"_data.csv")) 
+    # dplyr::filter(Temp == "35") %>% 
+    # arrange(desc(Y)) %>% 
+    # dplyr::mutate(Rank = 1:n()) %>% 
+    # write_csv(paste0(export.dir,"/",date,"_35s.csv"))
+}
+
+# ipamKey <- left_join(rio::import("../RackMaps.xlsx", sheet = "runs"), rio::import("../RackMaps.xlsx", sheet = "long")) %>% 
+#   dplyr::select(dateCBASS:site) %>% 
+#   left_join(rio::import("../Collections.xlsx", sheet = "CollectionNotes")) %>% 
+#   dplyr::select(c(dateCBASS,CBASSrun,uniquePosition,dateCollected,site,fieldTag,gps,camera,notes,rack.col,rack.position)) %>% 
+#   left_join(rio::import("../Outputs/GPS_collectionCoordinates.csv")) %>% 
+#   dplyr::select(-c(fieldBag,hammock,batch,uniqueHammock,RT.hammock)) %>% 
+#   dplyr::mutate(notes = case_when(uniquePosition == "Run3.O2" ~ "ignore, most probably hammock full of random frags mistaken for genet",
+#                                   TRUE ~ notes)) %>% 
+#   write_csv("../Outputs/CBASS_ipamKey.csv")
+
+ipamComp <- list.files(export.dir,
+                       pattern="*_data.csv", full.names=TRUE) %>% 
+  purrr::map_df(read_csv, show_col_types = FALSE) %>% 
+  dplyr::rename(dateCBASS = Date) %>% 
+  left_join(ipamKey) %>% 
+  dplyr::filter(!is.na(CBASSrun)) %>% 
+  dplyr::select(c(dateCBASS,CBASSrun,uniquePosition,site,fieldTag,Temp,rack.col,rack.position,`F`:Y)) %>% 
+  write_csv("../Outputs/CBASS_ipamData_oneAOI.csv")
+```
+
+#Plot Maps
+```{r}
+# plotNotes <- rio::import("../Plots.xlsx", sheet = "PreliminaryPlotMaps") %>% 
+#   dplyr::select(c(RT.site:transplanterID)) %>% 
+#   left_join(rio::import("../Plots.xlsx", sheet = "plotKey")) %$% 
+#   # kableExtra::kable(.)
+#   write_csv("../Data/plotMapDraft.csv")
+
+# plotNotes <- rio::import("../Plots.xlsx", sheet = "PreliminaryPlotMaps") %>%
+#   dplyr::select(c(RT.site:tagCorrections)) %>%
+#   left_join(rio::import("../Plots.xlsx", sheet = "plotKey")) %>%
+#   # kableExtra::kable(.)
+#   write_csv("../Data/plotMapDraft2.csv")
+
+rt.plots <- rio::import("../Plots.xlsx", sheet = "gpsSites")
+rt.hammocks <- df %>% 
+  dplyr::select(c(RT.hammock, fieldTag))
+  
+
+genoKey <- rio::import("../Plots.xlsx", sheet = "genoKey") %>% 
+  pivot_longer(cols = c(A:H),
+               names_to = "column",
+               values_to = "geno") %>% 
+  mutate(RT.hammock = paste0("RT.",geno))
+
+plotNotes <- rio::import("../Data/plotMapDraft2.xlsx", sheet = "Sheet1") %>% 
+  pivot_longer(cols = c(A:H),
+               names_to = "column",
+               values_to = "tag") %>% 
+  mutate(position = paste0(column,row))
+
+map <- left_join(plotNotes,genoKey) %>% 
+  dplyr::filter(!is.na(tag)) %>% 
+  dplyr::select(-c(position,RT.site,column,row,transplanter)) %>%
+  pivot_wider(names_from = "plot_id",
+              values_from = "tag") %>% 
+  left_join(df) %>% 
+  dplyr::select(fieldTag,SW_A:TX_C) %>% 
+  pivot_longer(cols = -c(fieldTag),
+               names_to = "plot_id",
+               values_to = "tag") %>% 
+  left_join(rt.plots) %>% 
+  dplyr::select(fieldTag,site.plot,tag) %>% 
+  pivot_wider(values_from = tag,
+              names_from = site.plot) %>% 
+  write_csv("../Outputs/RTplots_tagMap.csv")
+
+tagKey <- map %>% 
+  pivot_longer(cols = -c(fieldTag),
+               values_to = "tag",
+               names_to = "site.plot")
+
+map2 <- left_join(plotNotes,tagKey) %>% 
+  dplyr::select(RT.site,site.plot,fieldTag,row,column,position,tag) %>% 
+  dplyr::filter(!is.na(tag)) %>% 
+  write_csv("../Outputs/RTplots_long.csv")
+```
+

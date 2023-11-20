@@ -1,0 +1,5 @@
+Maxi version of Imaging-PAM M-series
+blue LEDs
+standard working distance 18.5 cm
+without filter plate
+ML3/MF8=AL0

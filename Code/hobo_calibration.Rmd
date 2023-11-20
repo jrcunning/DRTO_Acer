@@ -1,0 +1,66 @@
+---
+title: "HOBO_calibration"
+author: "ross"
+date: "8/20/2023"
+output: html_document
+---
+
+```{r}
+source("Code/hoboDHWs.R")
+
+# Obtaining HOBO Serial Numbers for Calibration Day
+hoboSerials_Calib <- NULL
+files <- list.files(path = "data/CBASS_HOBOs/CBASS_HOBO_calibration", recursive = FALSE, full.names = TRUE)
+for (i in files){
+  dat <- rio::import(i, sheet = "Details") %>% 
+    dplyr::select(c(3:4)) %>% 
+    dplyr::filter(`...3` %in% c("Serial Number","Name","First Sample Time")) %>% 
+    unique() %>% 
+    pivot_wider(names_from = `...3`,
+                values_from = `...4`)
+  hoboSerials_Calib <- plyr::rbind.fill(hoboSerials_Calib,dat) 
+}
+
+# Read data from HOBOs recorded during manual Calibration performed 06/19/23
+calibrations <- hoboDHWs("data/CBASS_HOBOs/CBASS_HOBO_calibration/", summary = FALSE, calc = FALSE) %>% 
+  separate(Group, into = c("Name"), sep = " ") %>%
+  # Change names used for each HOBO in calibration run to the different names used for CBASS runs for later joining
+  left_join(hoboSerials_Calib)
+
+# Read in temperatures manually recorded by 2 calibration thermometers to compare to each HOBO
+manualCal <- rio::import("data/CBASS_HOBOs/calibration.xlsx") %>% as_tibble() %>%
+  dplyr::select(time:thermBaker, Tank = hoboTemp) %>% 
+  tidyr::separate(time, c(NA,"DateTime"), sep = " ") %>% 
+  dplyr::mutate(dipTime = lubridate::ymd_hms(paste(lubridate::ymd("2023-06-19"), DateTime, sep = " ")))  %>%
+  distinct(dipTime, thermCunning, thermBaker)# %>% 
+
+# Get all HOBOs recorded temps at closest time to when manual readings were taken
+calibrations2 <- crossing(calibrations, manualCal) %>%
+  mutate(timeMatch = difftime(DateTime, dipTime)) %>%
+  group_by(hoboSerial = `Serial Number`, dipTime) %>%
+  filter(abs(timeMatch) == min(abs(timeMatch))) %>%
+  ungroup()
+
+
+
+# Generate offset values for each HOBO relative to manual readings from calibration thermometers
+calibrations3 <- calibrations2 %>%
+  select(hoboSerial, hoboTemp = `Temperature °C`, dipTime, thermCunning, thermBaker, timeMatch) %>%
+  rowwise() %>%
+  mutate(thermMean = mean(thermCunning, thermBaker),
+         offset = hoboTemp - thermMean)
+
+ggplot(calibrations3, aes(x = thermMean, y = offset)) +
+  facet_wrap(~hoboSerial) +
+  geom_point(aes(color = abs(offset) > 0.4))
+
+# One calibration point seems to be an outlier -- all HOBOs reading ~0.5 below calibration thermometers -- exclude
+calibrations4 <- calibrations3 %>%
+  filter(abs(offset) < 0.4)
+
+# Get average offset for each HOBO
+calibrations4 %>%
+  group_by(hoboSerial) %>%
+  summarize(offset = mean(offset)) %>%
+  write_csv("data/processed/hobo_offsets.csv")
+```

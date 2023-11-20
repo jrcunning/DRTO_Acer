@@ -1,0 +1,441 @@
+---
+title: "DRTO_GPS"
+author: "ross"
+date: "06/20/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(parzer)
+library(tidyverse)
+library(lubridate)
+library(magrittr)
+```
+
+# GPS Points
+
+```{r}
+# Read in coral collection info
+md <- rio::import("../Collections.xlsx", sheet = "CollectionNotes") %>% 
+  separate(time, c(NA,"time"), sep = " ") %>% 
+  unite(date_time, dateCollected, time, sep = " ") %>%
+  mutate(date_time = ymd_hms(date_time)) %>% 
+  write_csv("../Data/colony_metadata_parsed.csv")
+
+# md <- md %>%
+#   separate(position, into = c("lat", "lon"), sep = "' ") %>%
+#   mutate(lat = parse_lat(lat), lon = parse_lon(lon))
+# 
+# write_csv(md, "colony_metadata_parsed.csv")
+
+md[which(duplicated(md$uniqueHammock)),]
+
+ggplot(md, aes(depth_ft))+
+  geom_histogram(binwidth = 5, color="black", fill="white")+
+  theme_minimal() +
+  facet_wrap(~date(date_time))
+```
+
+```{r}
+# Read in GPS tracks
+gps_track_files <- list.files("../Data/GPS", pattern = "*.csv", full.names = TRUE)
+
+gps_tracks <- NULL
+
+for (i in gps_track_files) {
+  serial <- substr(i,nchar("../Data/GPS/GPS_")+1,nchar("../Data/GPS/GPS_")+4)
+  gps_single <- rio::import(i, skip = 34)
+  # gps_single <- rio::import(gps_track_files[2], skip = 34)
+  add = max(gps_single$ID)
+  # gps <- rio::import(gps_track_files[2], skip = (40+(add*2)))
+  gps <- rio::import(i, skip = (40+(add*2))) %>% 
+    dplyr::mutate(gps_id = as.numeric(serial)) %>% 
+    relocate(gps_id) 
+  gps_tracks <- plyr::rbind.fill(gps_tracks,gps)
+}
+
+gps_tracks %<>%
+  unique() %>% 
+  select(gps_id, time, lat, lon) %>%
+  mutate(date_time = as_datetime(time, tz = "US/Eastern"),
+         date_time_min = format(date_time, "%H:%M"))
+
+rtSites <- rio::import("../Plots.xlsx", sheet = "gpsSites") %>% 
+  dplyr::mutate(swimAroundStart = force_tz(swimAroundStart, "US/Eastern"),
+                swimAroundEnd = force_tz(swimAroundEnd, "US/Eastern"))
+  # dplyr::mutate(swimAroundStart = as_datetime(swimAroundStart, force_tz = "US/Eastern"),
+  #               swimAroundEnd = as_datetime(swimAroundEnd, force_tz = "US/Eastern"))
+
+gps_swims <- gps_tracks %>% 
+  left_join(rtSites) %>% 
+  dplyr::filter(date_time >= swimAroundStart & date_time <= swimAroundEnd) %>% 
+  write_csv("../Outputs/rtSites_GPSswims.csv")
+
+second(gps_tracks$date_time) <- 0
+
+# Get last lat/lon recorded for each discrete minute
+gps_tracks %<>%
+  group_by(gps_id, date_time) %>%
+  summarise(across(everything(), last)) %>% 
+  dplyr::select(-c(date_time_min)) %>% 
+  dplyr::mutate(date_time = lubridate::ymd_hms(date_time)) 
+
+# gps_tracks <- map_dfr(gps_track_files, read_csv, skip = 42, .id = "file_id") %>%
+#   janitor::clean_names() %>%
+#   mutate(file_id = basename(gps_track_files[as.numeric(file_id)])) %>%
+#   separate(file_id, into = c("gps_id", "date"), sep = "_")
+
+# gps_tracks <- gps_tracks %>%
+#   select(gps_id, time, lat, lon) %>%
+#   mutate(date_time = as_datetime(time, tz = "Pacific/Tahiti"),
+#          date_time_min = format(date_time, "%F %H:%M"))
+
+# gps_tracks2 <- gps_tracks %>%
+#   select(gps_id, time, lat, lon) %>%
+#   mutate(date_time_raw = lubridate::ymd_hms(time, tz = "Pacific/Tahiti"),
+#          date_time = lubridate::local_time(date_time_raw, tz = "US/Eastern"),
+#          date_time_min = format(date_time, "%H:%M"))
+```
+
+```{r}
+# Pull coral lat/lon from gps tracks based on date/time sampled
+df <- left_join(md, gps_tracks, by = c("gps" = "gps_id", "date_time")) %>% 
+  # view(.) %>% 
+# Write lat/lon to file
+  write_csv("../Outputs/collectionSites_GPScoords.csv")
+
+gps_tracks %<>% mutate(gps_old = as.factor(case_when(gps_id=="8007" ~ 1,
+                                                       gps_id == "4662" ~ 2,
+                                                       gps_id == "4324" ~ 3,
+                                                       gps_id == "5704" ~ 4)),
+                        gps_old=factor(gps_old, levels=c(1, 2,3,4)))
+
+gps_tracks %>%
+  filter(date_time>mdy("6/18/2023")) %>%
+  ggplot(., aes(lon, lat))+
+  geom_point(aes(color=gps_old, shape=as.factor(date(date_time))), alpha=0.3) +
+  cowplot::theme_map()+
+  theme(legend.position = "bottom") +
+  labs(x="Longitude", y="Latitude", color="GPS", shape="Date") +
+  scale_color_brewer(palette = "Spectral")
+
+df %>%
+  filter(date_time>mdy("6/18/2023")) %>%
+  ggplot(., aes(lon, lat))+
+  geom_point(aes(color=site, shape=as.factor(date(date_time))), alpha=0.3) +
+  cowplot::theme_map()+
+  theme(legend.position = "right") +
+  labs(x="Longitude", y="Latitude", color="GPS", shape="Date")
+  # scale_color_brewer(palette = "Spectral")
+
+# sites <- read_csv("../Data/sites.csv", skip = 22)
+```
+
+# HOBO Loggers
+
+```{r}
+runs <- list.dirs(path = "../Data/HOBOs", recursive = FALSE, full.names = TRUE)
+hobo <- NULL
+
+for (day in runs) {
+  name <- substr(day,nchar("../Data/HOBOs/")+1,nchar(day))
+  hoboDay <- adew.package::hoboDHWs(path = day, summary = FALSE, calc = FALSE) %>% 
+    tidyr::separate(Group, c("Tank"), sep = " ") %>% 
+    dplyr::mutate(Set = name)
+  hobo <- plyr::rbind.fill(hobo,hoboDay)
+}
+
+#Incorporate 06/19/23 Calibration
+calibrations <- hobo %>% 
+  dplyr::filter(Set == "calibration") %>% 
+  dplyr::mutate(Use = case_when(Tank == "CBASS_Spare" ~ "30C",
+                                Tank == "30C" ~ "38C_2",
+                                TRUE ~ Tank))
+
+manualCal <- rio::import("../Data/HOBOs/calibration.xlsx") %>% 
+  dplyr::select(time:thermBaker,Tank = hoboTemp) %>% 
+  tidyr::separate(time, c(NA,"DateTime"), sep = " ") %>% 
+  dplyr::mutate(Tank = case_when(Tank == "Spare" ~ "CBASS-Spare",
+                                     TRUE ~ paste0(Tank,"C")),
+                DateTime = lubridate::ymd_hms(paste(lubridate::ymd("2023-06-19"), DateTime, sep = " "))) %>% 
+  dplyr::group_by(calTemp) %>% 
+  dplyr::mutate(firstMin = first(DateTime),
+                lastMin = last(DateTime)) %>% 
+  dplyr::select(-c(DateTime)) %>% 
+  ungroup()
+
+calibrations2 <- calibrations %>% 
+  left_join(manualCal) %>% 
+  dplyr::filter(DateTime >= firstMin & DateTime <= lastMin) %>% 
+  dplyr::group_by(calTemp,Tank) %>% 
+  dplyr::summarise(mean = mean(`Temperature °C`)) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::group_by(calTemp) %>% 
+  dplyr::mutate(median = median(mean),
+                offset = median - mean) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::group_by(Tank) %>% 
+  dplyr::summarise(offset = mean(offset))
+
+#Finalize
+hobo %<>%
+  left_join(calibrations2) %>% 
+  dplyr::mutate(rawTempC = `Temperature °C`,
+                `Temperature °C` = rawTempC - offset,
+                Tank = case_when(Tank == "38C_2" ~ "38C",
+                                 TRUE ~ Tank))
+
+hobo %>% 
+  ggplot(aes(DateTime,`Temperature °C`)) +
+  geom_path(aes(color = Tank)) +
+  scale_color_brewer(palette = "Reds") +
+  facet_wrap(~Set, scale = "free_x") +
+  theme_light()
+```
+
+```{r Randomizing SW Channel}
+sw <- data.frame(number = sample(seq(1,60), replace = FALSE)) %>% 
+  dplyr::mutate(Site = case_when(number >= 1 & number <= 20 ~ "Pul",
+                                 number >= 21 & number <= 40 ~ "TX",
+                                 number >= 41 & number <= 60 ~ "SW"),
+                Order = 1:n())
+plants <- dplyr::bind_rows(data.frame(x = seq(1,8), planter = "Set1"),
+                           data.frame(x = seq(1,8), planter = "Set2"),
+                           data.frame(x = seq(1,8), planter = "Set3"),
+                           data.frame(x = seq(1,8), planter = "Set4"),
+                           data.frame(x = seq(1,8), planter = "Set5"),
+                           data.frame(x = seq(1,8), planter = "Set6"),
+                           data.frame(x = seq(1,8), planter = "Set7"),
+                           data.frame(x = seq(1,8), planter = "Set8")) %>% 
+  dplyr::mutate(Order = 1:n())
+
+sw %>% left_join(plants) %>% write_csv("../Data/2023-06-26_AM_SWRandom.csv")
+```
+
+```{r ipam}
+runs <- c("2023-06-20",
+          "2023-06-21",
+          "2023-06-22",
+          "2023-06-23",
+          "2023-06-24",
+          "2023-06-26",
+          "2023-06-27",
+          "2023-06-30")
+
+runs <- c("2023-06-30")
+
+for (i in runs) {
+  date = i
+  # Find the data for the day based on 'dates' above
+  data.dir = paste0("../Data/IPAM/",date,"/pam") 
+  # Where the daily joined data will be stored for later compilation
+  export.dir = "../Data/IPAM/working"
+  
+  import = adew.package::imPAM(data.dir,NULL) %>% 
+    tidyr::separate(file, into = c("file","Temp","rack.col")) %>% 
+    dplyr::mutate(file = as.numeric(file),
+                  Temp = as.numeric(Temp)) %>% 
+    dplyr::rename("rack.position" = AOI) %T>% 
+    write_csv(paste0(export.dir,"/",date,"_data.csv")) %>% 
+    dplyr::filter(Temp == "35") %>% 
+    arrange(desc(Y)) %>% 
+    dplyr::mutate(Rank = 1:n()) %>% 
+    write_csv(paste0(export.dir,"/",date,"_35s.csv"))
+}
+
+ipamComp <- list.files(export.dir,
+                       pattern="*_data.csv", full.names=TRUE) %>% 
+  purrr::map_df(read_csv, show_col_types = FALSE) %>% 
+  dplyr::rename(dateCBASS = Date) %>% 
+  left_join(rio::import("../RackMaps.xlsx", sheet = "runs")) %>% 
+  left_join(rio::import("../RackMaps.xlsx", sheet = "long")) %>% 
+  left_join(rio::import("../Collections.xlsx", sheet = "CollectionNotes")) %>% 
+  dplyr::select((rack.position:site)) %>% 
+  dplyr::filter(!is.na(uniquePosition))
+
+#just Rich's run
+
+import = adew.package::imPAM(data.dir,NULL) %>% 
+  tidyr::separate(file, into = c("file","Temp","rack.col"), sep = "_") %>% 
+  dplyr::mutate(Temp = case_when(Temp == "34-5" ~ 34.5,
+                                 TRUE ~ as.numeric(Temp))) %>% 
+  dplyr::rename(dateCBASS = Date) %>% 
+  left_join(rio::import("../RackMaps.xlsx", sheet = "runs")) %>% 
+  left_join(rio::import("../RackMaps.xlsx", sheet = "long")) %>% 
+  dplyr::mutate(Species = case_when(grepl("Apal", fieldTag) == TRUE ~ "Apal",
+                                    grepl("Apro", fieldTag) == TRUE ~ "Apro",
+                                    grepl("Acer", fieldTag) == TRUE ~ "Acer"),
+                Nursery = case_when(grepl("RRT", fieldTag) == TRUE ~ "RRT",
+                                    grepl("CRF", fieldTag) == TRUE ~ "CRF"))
+
+
+import %>% 
+  ggplot(aes(Temp,Y)) +
+  geom_jitter(aes(color = Species, shape = Nursery), width = 0.2, alpha = 0.3) +
+  scale_color_brewer(palette = "Set1") +
+  ylim(0,.6)
+
+import %>% 
+  ggplot(aes(Temp,Y)) +
+  geom_boxplot(aes(color = Species, group = interaction(Nursery,Temp,Species)), width = 0.2) +
+  scale_color_brewer(palette = "Set1") +
+  ylim(0,.6)
+
+import %>% 
+  ggplot(aes(Temp,Y)) +
+  geom_point(aes(color = Species, shape = Nursery)) +
+  scale_color_brewer(palette = "Set1") +
+  facet_wrap(~Species) +
+  ylim(0,.6)
+```
+
+#Plot Maps
+```{r}
+# plotNotes <- rio::import("../Plots.xlsx", sheet = "PreliminaryPlotMaps") %>% 
+#   dplyr::select(c(RT.site:transplanterID)) %>% 
+#   left_join(rio::import("../Plots.xlsx", sheet = "plotKey")) %$% 
+#   # kableExtra::kable(.)
+#   write_csv("../Data/plotMapDraft.csv")
+
+# plotNotes <- rio::import("../Plots.xlsx", sheet = "PreliminaryPlotMaps") %>%
+#   dplyr::select(c(RT.site:tagCorrections)) %>%
+#   left_join(rio::import("../Plots.xlsx", sheet = "plotKey")) %>%
+#   # kableExtra::kable(.)
+#   write_csv("../Data/plotMapDraft2.csv")
+
+genoKey <- rio::import("../Plots.xlsx", sheet = "genoKey") %>% 
+  pivot_longer(cols = c(A:H),
+               names_to = "column",
+               values_to = "geno") %>% 
+  mutate(RT.hammock = paste0("RT.",geno))
+
+plotNotes <- rio::import("../Data/plotMapDraft2.xlsx", sheet = "Sheet1") %>% 
+  pivot_longer(cols = c(A:H),
+               names_to = "column",
+               values_to = "tag") %>% 
+  mutate(position = paste0(column,row))
+
+map <- left_join(plotNotes,genoKey) %>% 
+  dplyr::filter(!is.na(tag)) %>% 
+  dplyr::select(-c(position,RT.site,column,row,transplanter)) %>% 
+  pivot_wider(names_from = "plot_id",
+              values_from = "tag") %>% 
+  # left_join(rio::import("../Collections.xlsx", sheet = "CollectionNotes")) %>% 
+  left_join(df)
+```
+
+#### Defunct:  Ignore Code Below ####
+
+```{r Troubleshooting Time}
+gps_tracks %>% 
+  dplyr::filter(date_time > as.Date("2023-05-01")) %>% 
+  # dplyr::filter(date_time < as.Date("2023-06-21")) %>% 
+  ggplot(aes(date_time,lat)) +
+  geom_point(size = 0.1) +
+  # geom_point(aes(y = tag), data = md, color = "blue") +
+  facet_wrap(~gps_id) 
+```
+
+```{r Troubleshooting Site O2263}
+#4662, 8007, 6/20/2023
+library(magrittr)
+gps_tracks %<>% mutate(gps_old = as.factor(case_when(gps_id=="8007" ~ 1,
+                                                       gps_id == "4662" ~ 2,
+                                                       gps_id == "4324" ~ 3,
+                                                       gps_id == "5704" ~ 4)),
+                        gps_old=factor(gps_old, levels=c(1, 2,3,4)))
+
+lastDiveDayOne <- gps_tracks%>%
+  filter(date_time<mdy("6/21/2023")&date_time>mdy("6/18/2023")) %>%
+  filter(gps_id=="4662")
+
+
+finalPoint <- gps_tracks%>%
+  filter(date_time<mdy("6/21/2023")&date_time>mdy("6/18/2023")) %>%
+  filter(gps_old==1|gps_old==4)%>%
+  arrange(desc(date_time))%>%
+  group_by(gps_old)%>%
+  slice_head(n=5) 
+
+firstPoint <- gps_tracks%>%
+  filter(date_time<mdy("6/21/2023")&date_time>mdy("6/18/2023")) %>%
+  filter(gps_old==1|gps_old==4|gps_old==2)%>%
+  arrange(desc(date_time))%>%
+  group_by(gps_old)%>%
+  slice_tail(n=5) 
+
+gps_tracks %>% 
+  filter(gps_id=="5704"|gps_id=="8007")%>%
+  filter(date_time<mdy("6/21/2023")&date_time>mdy("6/18/2023")) %>%
+  ggplot(aes(date_time,lat)) +
+  geom_point(aes(color = as.factor(gps_id)))
+
+gps_tracks %>% 
+  filter(gps_id=="5704"|gps_id=="8007")%>%
+  filter(date_time<mdy("6/21/2023")&date_time>mdy("6/18/2023")) %>%
+  ggplot(aes(date_time,lon)) +
+  geom_point(aes(color = as.factor(gps_id)))
+
+
+gps_tracks %>% 
+  #filter(gps_id=="5704"|gps_id=="8007")%>%
+  filter(date_time<mdy("6/21/2023")&date_time>mdy("6/18/2023")) %>%
+  mutate(hour=hour(date_time))%>%
+  ggplot(aes(lon, lat)) +
+  geom_point(aes(color = as.factor(gps_old)), shape = 12, alpha=0.8) +
+  facet_wrap(~hour)
+
+gps_tracks %>% 
+  filter(gps_id=="5704"|gps_id=="8007")%>%
+  filter(date_time<mdy("6/21/2023")&date_time>mdy("6/18/2023")) %>% 
+  View(.)
+
+gps_tracks %>%
+  filter(date_time>mdy("6/18/2023")) %>%
+  ggplot(., aes(lon, lat))+
+  geom_point(aes(color=gps_old, shape=as.factor(date(date_time))), alpha=0.3) +
+  cowplot::theme_map()+
+  theme(legend.position = "bottom") +
+  labs(x="Longitude", y="Latitude", color="GPS", shape="Date") +
+  scale_color_brewer(palette = "Spectral")
+```
+
+```{r}
+library("rnaturalearth")
+library("rnaturalearthdata")
+library("sf")
+
+# Download satellite map for Florida
+world <- ne_countries(scale = "large", returnclass = "sf")
+
+# Plot map with nursery labels
+set.seed(10)
+fig1a <- #ggmap(map_fl, extent = "panel") +
+  ggplot(data = world) +
+  geom_sf(lwd = 0, fill = "gray70") +
+  coord_sf(xlim = c(-82.6, -79.1), ylim = c(23.7, 26.9), expand = FALSE) +
+  geom_point(data = loc, aes(x = lon, y = lat), pch = 21, fill = "white", size = 1.5, stroke = 0.3) +
+  annotate(geom = "point", x = -80.1918, y = 25.7617, size = 0.5) +
+  annotate(geom = "text", x = -80.25, y = 25.85, label = "Miami", adj = 1, size = 2, fontface = "italic") +
+  annotate(geom = "point", x = -81.78, y = 24.5551, size = 0.5) +
+  annotate(geom = "text", x = -82.03, y = 24.67, label = "Key West", adj = 0.5, size = 2, fontface = "italic") +
+  geom_label_repel(dat = loc, aes(x = lon, y = lat, label = nursery, fill = nursery), 
+                   label.padding = 0.125,
+                   size = 2,
+                   force = 50, segment.size = 0.3, segment.color = "black", min.segment.length = 0,
+                   direction = "both", hjust = 0.5, vjust = 0.5, 
+                   nudge_x = c(-0.6, -0.15, 0.05, 0.5, 0.5, 0.5), 
+                   nudge_y = c(-0.5, -0.5, -0.5, -0.05, 0, 0.2)) +
+  scale_fill_manual(values = alpha(c("#F8766D", "#B79F00", "#00BA38", 
+                                     "#00BFC4", "#619CFF", "#F564E3"), 0.7)) +
+  scale_y_continuous(breaks = c(24, 25, 26), labels = c(24, 25, 26)) +
+  scale_x_continuous(breaks = c(-82, -81, -80), labels = c(-82, -81, -80)) +
+  theme(legend.position = "none") +
+  theme(text = element_text(size = 10),
+        panel.background = element_blank(),
+        panel.border = element_rect(colour = "black", fill=NA)) +
+  labs(y = "Latitude", x = "Longitude")
+fig1a
+```

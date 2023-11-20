@@ -1,0 +1,9110 @@
+
+metadata
+ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
+1,,,2023-06-24T20:11:56Z,,24.434708040207624,-89.098021974787116,46.000711983069777,-80.096879974007607,
+
+author
+ID,name,email,
+
+copyright
+year,license,author,
+
+link
+metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
+1,,,,,,,"Garmin International",,http://www.garmin.com,
+
+rte
+ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
+
+rtept
+ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
+
+wpt
+ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
+1,25.045136986300349,-80.369885014370084,3.052393,2022-06-14T20:44:58Z,,,"001",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-06-14T20:44:58Z,
+2,25.044887037947774,-80.369758028537035,4.87641,2022-06-14T21:34:35Z,,,"002",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-06-14T21:34:35Z,
+3,25.043963016942143,-80.370041001588106,0.294487,2022-06-14T21:44:41Z,,,"003",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-06-14T21:44:41Z,
+4,25.043818010017276,-80.369994984939694,3.895254,2022-06-15T01:48:20Z,,,"004",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-06-15T01:48:20Z,
+5,24.683095011860132,-82.816428020596504,4.80381,2023-06-20T18:27:52Z,,,"005",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-20T18:27:52Z,
+6,24.683095011860132,-82.816431038081646,4.853176,2023-06-20T18:27:53Z,,,"006",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-20T18:27:53Z,
+7,24.683095011860132,-82.816431960090995,4.875612,2023-06-20T18:27:56Z,,,"007",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-20T18:27:56Z,
+8,24.683095011860132,-82.816432965919375,5.017382,2023-06-20T18:32:17Z,,,"008",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-20T18:32:17Z,
+9,24.683096017688513,-82.816389966756105,4.603897,2023-06-20T18:32:23Z,,,"009",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-20T18:32:23Z,
+10,24.683097023516893,-82.816389966756105,4.519852,2023-06-20T18:32:25Z,,,"010",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-20T18:32:25Z,
+11,24.683099035173655,-82.816396001726389,4.361517,2023-06-20T18:32:32Z,,,"011",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-20T18:32:32Z,
+12,24.624183978885412,-82.828191015869379,2.393444,2023-06-21T12:51:48Z,,,"012",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-21T12:51:48Z,
+13,24.627384021878242,-82.810408975929022,2.508574,2023-06-21T14:45:56Z,,,"013",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-21T14:45:56Z,
+14,24.587938031181693,-82.887048991397023,21.293773999999999,2023-06-22T12:33:31Z,,,"014",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-22T12:33:31Z,
+15,24.591530011966825,-82.896735034883022,3.827902,2023-06-22T13:19:17Z,,,"015",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-22T13:19:17Z,
+16,24.593502022325993,-82.897641034796834,2.030478,2023-06-22T15:11:07Z,,,"016",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-22T15:11:07Z,
+17,24.697169987484813,-82.886168975383043,3.457632,2023-06-23T17:19:06Z,,,"017",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-23T17:19:06Z,
+18,24.697166969999671,-82.863305993378162,4.260128,2023-06-23T18:15:46Z,,,"018",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-23T18:15:46Z,
+19,45.990813039243221,-89.086292004212737,529.709166999999979,2020-05-23T22:19:01Z,,,"108",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T22:19:01Z,
+20,24.45564896799624,-81.905502984300256,0,2021-09-02T11:27:17Z,,,"1201","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+21,24.56683399155736,-81.328606009483337,0,2021-09-02T11:27:17Z,,,"1213","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>736</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1213</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.566834</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.328606</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.543308</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>736</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1213</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.566834</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.328606</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.543308</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+22,24.457357032224536,-81.921793967485428,0,2021-09-02T11:27:17Z,,,"1215","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>737</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1215</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.457357</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.921794</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-24.278216</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>737</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1215</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.457357</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.921794</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-24.278216</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+23,24.600847000256181,-81.254115030169487,0,2021-09-02T11:27:17Z,,,"1218","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>738</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1218</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.600847</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.254115</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.871392</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>738</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1218</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.600847</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.254115</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.871392</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+24,25.100661981850863,-80.303522972390056,0,2021-09-02T11:27:17Z,,,"1231","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>739</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1231</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.100662</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.303523</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.496064</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>739</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1231</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.100662</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.303523</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.496064</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+25,25.165000967681408,-80.256522037088871,0,2021-09-02T11:27:17Z,,,"1232","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>740</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1232</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.165001</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.256522</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>740</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1232</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.165001</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.256522</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+26,24.583683963865042,-81.25556199811399,0,2021-09-02T11:27:17Z,,,"1255","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>741</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1255</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.583684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.255562</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-37.401576</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>741</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1255</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.583684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.255562</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-37.401576</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+27,25.264428025111556,-80.188388982787728,0,2021-09-02T11:27:17Z,,,"1263","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>742</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1263</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.264428</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.188389</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-36.745408</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>742</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1263</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.264428</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.188389</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-36.745408</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+28,25.136587992310524,-80.263141980394721,0,2021-09-02T11:27:17Z,,,"1296","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>743</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1296</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.136588</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.263142</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-30.839896</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>743</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1296</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.136588</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.263142</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-30.839896</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+29,25.161078991368413,-80.285319993272424,0,2021-09-02T11:27:17Z,,,"1298","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>744</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1298</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.161079</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.28532</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-13.451444</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>744</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1298</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.161079</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.28532</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-13.451444</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+30,25.068501960486174,-80.382950976490974,1.744776,2022-05-08T02:15:05Z,,,"132",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-08T02:15:05Z,
+31,25.013783974573016,-80.374166993424296,0.5654,2022-05-12T01:09:45Z,,,"133",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-12T01:09:45Z,
+32,25.013707028701901,-80.374587010592222,0.692393,2022-05-12T01:11:03Z,,,"134",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-12T01:11:03Z,
+33,25.013608038425446,-80.374354999512434,2.066936,2022-05-12T01:15:07Z,,,"135",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-12T01:15:07Z,
+34,25.01392001286149,-80.374442003667355,2.153322,2022-05-12T01:16:01Z,,,"136",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-12T01:16:01Z,
+35,24.631576985120773,-81.239850958809257,0,2021-09-02T11:27:17Z,,,"1361","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>745</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1361</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.631577</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.239851</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.16798</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Mid Chann</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>745</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1361</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.631577</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.239851</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.16798</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Mid Chann</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+36,25.123361013829708,-80.407468965277076,-1.437197,2022-05-21T20:49:44Z,,,"137",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-21T20:49:44Z,
+37,25.123377023264766,-80.407467037439346,1.11272,2022-05-21T20:49:46Z,,,"138",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-21T20:49:46Z,
+38,24.458739040419459,-81.917363964021206,0,2021-09-02T11:27:17Z,,,"1394","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>746</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1394</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.458739</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.917364</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.871392</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>746</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1394</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.458739</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.917364</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.871392</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+39,24.460553973913193,-81.915896963328123,0,2021-09-02T11:27:17Z,,,"1409","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>747</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1409</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.460554</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.915897</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.543308</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>747</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1409</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.460554</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.915897</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.543308</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+40,24.44643197581172,-81.936018979176879,0,2021-09-02T11:27:17Z,,,"1410","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>748</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1410</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.446432</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.936019</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.824148</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>748</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1410</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.446432</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.936019</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.824148</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+41,25.231326967477798,-80.247184010222554,0,2021-09-02T11:27:17Z,,,"1427","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>749</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1427</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.231327</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.247184</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-7.874016</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>749</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1427</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.231327</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.247184</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-7.874016</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+42,25.182130979374051,-80.250959973782301,0,2021-09-02T11:27:17Z,,,"1429","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>750</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1429</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.182131</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.25096</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-26.902888</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>750</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1429</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.182131</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.25096</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-26.902888</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+43,24.454956036061049,-81.94496096111834,0,2021-09-02T11:27:17Z,,,"2206","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>751</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2206</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.454956</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.944961</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-33.464568</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>751</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2206</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.454956</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.944961</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-33.464568</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+44,24.60402499884367,-81.243749968707561,0,2021-09-02T11:27:17Z,,,"2216","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>752</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2216</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.604025</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.24375</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.496064</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>752</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2216</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.604025</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.24375</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.496064</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+45,24.585466962307692,-81.269393982365727,0,2021-09-02T11:27:17Z,,,"2222","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>753</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2222</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.585467</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.269394</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.496064</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>753</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2222</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.585467</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.269394</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-31.496064</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+46,25.0872060097754,-80.322935963049531,0,2021-09-02T11:27:17Z,,,"2226","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>754</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2226</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.087206</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.322936</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-21.32546</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>754</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2226</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.087206</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.322936</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-21.32546</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+47,25.084879025816917,-80.308075016364455,0,2021-09-02T11:27:17Z,,,"2228","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>755</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2228</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.084879</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.308075</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.871392</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>755</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2228</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.084879</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.308075</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-28.871392</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+48,25.126300966367126,-80.283042965456843,0,2021-09-02T11:27:17Z,,,"2232","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>756</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2232</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.126301</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.283043</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-37.073492</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>756</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2232</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.126301</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.283043</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-37.073492</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+49,24.449365977197886,-81.89904497936368,0,2021-09-02T11:27:17Z,,,"2239","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>757</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2239</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.449366</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.899045</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-38.057744</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>757</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2239</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.449366</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.899045</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-38.057744</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+50,24.434708040207624,-81.933466019108891,0,2021-09-02T11:27:17Z,,,"2240","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>758</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2240</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.434708</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.933466</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-48.556432</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>758</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2240</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.434708</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.933466</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-48.556432</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+51,24.570492021739483,-81.307383030653,0,2021-09-02T11:27:17Z,,,"2261","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>759</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2261</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.570492</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.307383</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-36.745408</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>759</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2261</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.570492</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.307383</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-36.745408</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+52,25.226609967648983,-80.208494989201427,0,2021-09-02T11:27:17Z,,,"2297","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>760</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2297</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.22661</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.208495</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-19.68504</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>760</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2297</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.22661</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.208495</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-19.68504</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+53,25.136265037581325,-80.289432993158698,0,2021-09-02T11:27:17Z,,,"2298","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>761</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2298</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.136265</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.289433</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-26.24672</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>761</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2298</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.136265</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.289433</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-26.24672</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>SPGR_HR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+54,24.628860997036099,-81.243797997012734,0,2021-09-02T11:27:17Z,,,"2361","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>762</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2361</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.628861</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.243798</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-30.839896</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Mid Chann</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>762</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2361</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.628861</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.243798</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-30.839896</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Middle Key</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Mid Chann</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+55,24.460563026368618,-81.914416970685124,0,2021-09-02T11:27:17Z,,,"2393","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>763</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2393</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.460563</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.914417</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-32.480316</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>763</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2393</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.460563</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.914417</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-32.480316</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+56,24.457864975556731,-81.912425011396408,0,2021-09-02T11:27:17Z,,,"2409","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>764</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2409</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.457865</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.912425</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-33.792652</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>764</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2409</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.457865</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.912425</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-33.792652</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+57,25.113315973430872,-80.305931009352207,0,2021-09-02T11:27:17Z,,,"2423","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>765</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2423</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.113316</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.305931</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-14.435696</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>765</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2423</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.113316</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.305931</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-14.435696</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+58,25.143865998834372,-80.2740119677037,0,2021-09-02T11:27:17Z,,,"2428","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>766</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2428</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.143866</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.274012</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-37.401576</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>766</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>2428</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>25.143866</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-80.274012</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-37.401576</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Upper Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Offshore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>ISOL_MR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Secondary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+59,45.992433009669185,-89.082430964335799,522.864562999999976,2020-05-23T21:37:04Z,,,"ACCESS END",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T21:37:04Z,
+60,45.991983991116285,-89.085579961538315,529.449463000000037,2020-05-23T22:14:14Z,,,"ACCESSROADPATH",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T22:14:14Z,
+61,24.680399978533387,-82.891250001266599,0,2023-06-17T13:59:13Z,,,"ACER_ACR_001",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+62,24.680399978533387,-82.891183029860258,0,2023-06-17T13:59:13Z,,,"ACER_ACR_002",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+63,24.680399978533387,-82.891250001266599,0,2023-06-17T13:59:13Z,,,"ACER_ACR_003",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+64,24.680267041549087,-82.891283025965095,0,2023-06-17T13:59:13Z,,,"ACER_ACR_004",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+65,24.680282967165112,-82.891300041228533,0,2023-06-17T13:59:13Z,,,"ACER_ACR_005",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+66,24.680382963269949,-82.891199961304665,0,2023-06-17T13:59:13Z,,,"ACER_ACR_006",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+67,24.680399978533387,-82.891183029860258,0,2023-06-17T13:59:13Z,,,"ACER_ACR_007",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+68,24.680282967165112,-82.891283025965095,0,2023-06-17T13:59:13Z,,,"ACER_ACR_008",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+69,24.680399978533387,-82.891250001266599,0,2023-06-17T13:59:13Z,,,"ACER_ACR_009",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+70,24.680382963269949,-82.89123298600316,0,2023-06-17T13:59:13Z,,,"ACER_ACR_010",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+71,24.680382963269949,-82.891199961304665,0,2023-06-17T13:59:13Z,,,"ACER_ACR_011",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+72,24.680399978533387,-82.891267016530037,0,2023-06-17T13:59:13Z,,,"ACER_ACR_012",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+73,24.680099990218878,-82.8911670204252,0,2023-06-17T13:59:13Z,,,"ACER_ACR_013",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+74,24.680066965520382,-82.891050009056926,0,2023-06-17T13:59:13Z,,,"ACER_ACR_014",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+75,24.680416993796825,-82.891250001266599,0,2023-06-17T13:59:13Z,,,"ACER_ACR_015",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+76,24.680199986323714,-82.891817037016153,0,2023-06-17T13:59:13Z,,,"ACER_ACR_016",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+77,24.680399978533387,-82.891183029860258,0,2023-06-17T13:59:13Z,,,"ACER_ACR_017",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+78,24.680399978533387,-82.891267016530037,0,2023-06-17T13:59:13Z,,,"ACER_ACR_018",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+79,24.683483010157943,-82.896582987159491,0,2023-06-17T13:59:13Z,,,"ACER_ELS_001",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+80,24.683310007676482,-82.896449966356158,0,2023-06-17T13:59:13Z,,,"ACER_ELS_002",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+81,24.683159971609712,-82.896260032430291,0,2023-06-17T13:59:13Z,,,"ACER_ELS_003",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+82,24.683749973773956,-82.894133040681481,0,2023-06-17T13:59:13Z,,,"ACER_ELS_004",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+83,24.683180004358292,-82.896290039643645,0,2023-06-17T13:59:13Z,,,"ACER_ELS_005",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+84,24.683232977986336,-82.895967001095414,0,2023-06-17T13:59:13Z,,,"ACER_ELS_006",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+85,24.683367004618049,-82.896549962460995,0,2023-06-17T13:59:13Z,,,"ACER_ELS_007",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+86,24.683180004358292,-82.896249974146485,0,2023-06-17T13:59:13Z,,,"ACER_ELS_008",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+87,24.683229960501194,-82.896419959142804,0,2023-06-17T13:59:13Z,,,"ACER_ELS_009",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+88,24.683210011571646,-82.896379977464676,0,2023-06-17T13:59:13Z,,,"ACER_ELS_010",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+89,24.683180004358292,-82.896290039643645,0,2023-06-17T13:59:13Z,,,"ACER_ELS_011",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+90,24.683189978823066,-82.896219966933131,0,2023-06-17T13:59:13Z,,,"ACER_ELS_012",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+91,24.683200037106872,-82.896349970251322,0,2023-06-17T13:59:13Z,,,"ACER_ELS_013",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+92,24.683180004358292,-82.896290039643645,0,2023-06-17T13:59:13Z,,,"ACER_ELS_014",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+93,24.683132981881499,-82.895649997517467,0,2023-06-17T13:59:13Z,,,"ACER_ELS_015",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+94,24.663116997107863,-82.812933018431067,0,2023-06-17T13:59:13Z,,,"ACER_MID_001",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+95,24.663150021806359,-82.813082970678806,0,2023-06-17T13:59:13Z,,,"ACER_MID_002",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+96,24.663116997107863,-82.81291700899601,0,2023-06-17T13:59:13Z,,,"ACER_MID_003",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+97,24.663150021806359,-82.813082970678806,0,2023-06-17T13:59:13Z,,,"ACER_MID_004",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+98,24.663116997107863,-82.813066961243749,0,2023-06-17T13:59:13Z,,,"ACER_MID_005",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+99,24.663050025701523,-82.812899993732572,0,2023-06-17T13:59:13Z,,,"ACER_MID_006",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+100,24.663116997107863,-82.812933018431067,0,2023-06-17T13:59:13Z,,,"ACER_MID_007",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+101,24.663099981844425,-82.813050029799342,0,2023-06-17T13:59:13Z,,,"ACER_MID_008",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+102,24.663150021806359,-82.812950033694506,0,2023-06-17T13:59:13Z,,,"ACER_MID_009",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+103,24.663167037069798,-82.813099985942245,0,2023-06-17T13:59:13Z,,,"ACER_MID_010",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+104,24.663116997107863,-82.813033014535904,0,2023-06-17T13:59:13Z,,,"ACER_MID_011",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+105,24.663133006542921,-82.81291700899601,0,2023-06-17T13:59:13Z,,,"ACER_MID_012",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+106,24.663150021806359,-82.812950033694506,0,2023-06-17T13:59:13Z,,,"ACER_MID_013",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+107,24.663082966580987,-82.81291700899601,0,2023-06-17T13:59:13Z,,,"ACER_MID_014",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+108,24.663116997107863,-82.812933018431067,0,2023-06-17T13:59:13Z,,,"ACER_MID_015",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+109,24.663099981844425,-82.81291700899601,0,2023-06-17T13:59:13Z,,,"ACER_MID_016",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+110,24.663150021806359,-82.813033014535904,0,2023-06-17T13:59:13Z,,,"ACER_MID_017",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+111,24.663133006542921,-82.812933018431067,0,2023-06-17T13:59:13Z,,,"ACER_MID_018",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+112,24.663150021806359,-82.813099985942245,0,2023-06-17T13:59:13Z,,,"ACER_MID_019",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+113,24.663116997107863,-82.81291700899601,0,2023-06-17T13:59:13Z,,,"ACER_MID_020",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+114,24.663116997107863,-82.812933018431067,0,2023-06-17T13:59:13Z,,,"ACER_MID_021",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+115,24.702350003644824,-82.799700004979968,0,2023-06-17T13:59:13Z,,,"ACER_PUL_001",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+116,24.702350003644824,-82.799633033573627,0,2023-06-17T13:59:13Z,,,"ACER_PUL_002",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+117,24.702350003644824,-82.799733029678464,0,2023-06-17T13:59:13Z,,,"ACER_PUL_003",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+118,24.702416975051165,-82.799449972808361,0,2023-06-17T13:59:13Z,,,"ACER_PUL_004",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+119,24.702350003644824,-82.799600008875132,0,2023-06-17T13:59:13Z,,,"ACER_PUL_005",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+120,24.702350003644824,-82.799600008875132,0,2023-06-17T13:59:13Z,,,"ACER_PUL_006",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+121,24.702350003644824,-82.799700004979968,0,2023-06-17T13:59:13Z,,,"ACER_PUL_007",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+122,24.702416975051165,-82.79938300140202,0,2023-06-17T13:59:13Z,,,"ACER_PUL_008",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+123,24.702350003644824,-82.799700004979968,0,2023-06-17T13:59:13Z,,,"ACER_PUL_009",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+124,24.702350003644824,-82.79968298971653,0,2023-06-17T13:59:13Z,,,"ACER_PUL_010",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+125,24.702332988381386,-82.799566984176636,0,2023-06-17T13:59:13Z,,,"ACER_PUL_011",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+126,24.702350003644824,-82.799633033573627,0,2023-06-17T13:59:13Z,,,"ACER_PUL_012",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+127,24.702350003644824,-82.799666980281472,0,2023-06-17T13:59:13Z,,,"ACER_PUL_013",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+128,24.702350003644824,-82.79974996112287,0,2023-06-17T13:59:13Z,,,"ACER_PUL_014",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+129,24.702350003644824,-82.799733029678464,0,2023-06-17T13:59:13Z,,,"ACER_PUL_015",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+130,24.702350003644824,-82.799717020243406,0,2023-06-17T13:59:13Z,,,"ACER_PUL_016",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+131,24.702350003644824,-82.799633033573627,0,2023-06-17T13:59:13Z,,,"ACER_PUL_017",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+132,24.702332988381386,-82.799566984176636,0,2023-06-17T13:59:13Z,,,"ACER_PUL_018",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+133,24.702350003644824,-82.799666980281472,0,2023-06-17T13:59:13Z,,,"ACER_PUL_019",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+134,24.702332988381386,-82.799566984176636,0,2023-06-17T13:59:13Z,,,"ACER_PUL_020",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+135,24.702350003644824,-82.799666980281472,0,2023-06-17T13:59:13Z,,,"ACER_PUL_021",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+136,24.619400007650256,-82.920309975743294,0,2023-06-17T13:59:13Z,,,"ACER_TNC_001",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+137,24.619309986010194,-82.920469986274838,0,2023-06-17T13:59:13Z,,,"ACER_TNC_002",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+138,24.619420040398836,-82.920260019600391,0,2023-06-17T13:59:13Z,,,"ACER_TNC_003",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+139,24.619379974901676,-82.920369990170002,0,2023-06-17T13:59:13Z,,,"ACER_TNC_004",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+140,24.619330018758774,-82.920439979061484,0,2023-06-17T13:59:13Z,,,"ACER_TNC_005",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+141,24.619420040398836,-82.920260019600391,0,2023-06-17T13:59:13Z,,,"ACER_TNC_006",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+142,24.619379974901676,-82.920390022918582,0,2023-06-17T13:59:13Z,,,"ACER_TNC_007",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+143,24.619449963793159,-82.920260019600391,0,2023-06-17T13:59:13Z,,,"ACER_TNC_008",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+144,24.619500003755093,-82.920239986851811,0,2023-06-17T13:59:13Z,,,"ACER_TNC_009",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+145,24.619379974901676,-82.920339982956648,0,2023-06-17T13:59:13Z,,,"ACER_TNC_010",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+146,24.619379974901676,-82.920339982956648,0,2023-06-17T13:59:13Z,,,"ACER_TNC_011",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+147,24.619469996541739,-82.920249961316586,0,2023-06-17T13:59:13Z,,,"ACER_TNC_012",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+148,24.619330018758774,-82.92043000459671,0,2023-06-17T13:59:13Z,,,"ACER_TNC_013",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+149,24.619349967688322,-82.920390022918582,0,2023-06-17T13:59:13Z,,,"ACER_TNC_014",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+150,24.619500003755093,-82.920239986851811,0,2023-06-17T13:59:13Z,,,"ACER_TNC_015",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+151,24.619500003755093,-82.920239986851811,0,2023-06-17T13:59:13Z,,,"ACER_TNC_016",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+152,24.619379974901676,-82.920379964634776,0,2023-06-17T13:59:13Z,,,"ACER_TNC_017",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+153,24.619339993223548,-82.920399997383356,0,2023-06-17T13:59:13Z,,,"ACER_TNC_018",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+154,24.619319960474968,-82.920460011810064,0,2023-06-17T13:59:13Z,,,"ACER_TNC_019",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+155,24.619400007650256,-82.920309975743294,0,2023-06-17T13:59:13Z,,,"ACER_TNC_020",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+156,25.043946001678705,-80.369923990219831,-2.175691,2022-05-12T23:59:56Z,,,"BALL",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-12T23:59:56Z,
+157,25.110880024731159,-80.303929997608066,4.434931,2022-05-08T23:31:17Z,,,"BIG G",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-08T23:31:17Z,
+158,24.668690962716937,-82.849940964952111,9.550601,2023-06-23T16:41:18Z,,,"BOAT RETURN6.23",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-23T16:41:18Z,
+159,24.618770023807883,-82.920200005173683,0,2023-06-17T13:58:39Z,,,"C1300",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+160,24.632400004193187,-82.905100006610155,0,2023-06-17T13:58:39Z,,,"C1441",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+161,24.632290033623576,-82.905200002714992,0,2023-06-17T13:58:39Z,,,"C14411",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+162,24.619060037657619,-82.897299975156784,0,2023-06-17T13:58:39Z,,,"C1443",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+163,24.619019972160459,-82.897399971261621,0,2023-06-17T13:58:39Z,,,"C14431",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+164,24.629170037806034,-82.886299984529614,0,2023-06-17T13:58:39Z,,,"C1444",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+165,24.629199961200356,-82.886399980634451,0,2023-06-17T13:58:39Z,,,"C14441",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+166,24.628759995102882,-82.886199988424778,0,2023-06-17T13:58:39Z,,,"C14442",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+167,24.618540024384856,-82.920100009068847,0,2023-06-17T13:58:39Z,,,"C1445",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+168,24.618519991636276,-82.920100009068847,0,2023-06-17T13:58:39Z,,,"C14451",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+169,24.632390029728413,-82.905299998819828,0,2023-06-17T13:58:39Z,,,"C1446",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+170,24.632330015301704,-82.905100006610155,0,2023-06-17T13:58:39Z,,,"C14461",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+171,24.633770026266575,-82.87369997240603,0,2023-06-17T13:58:39Z,,,"C1447",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+172,24.633619990199804,-82.873899964615703,0,2023-06-17T13:58:39Z,,,"C14471",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+173,24.633580008521676,-82.873499980196357,0,2023-06-17T13:58:39Z,,,"C14472",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+174,24.633940011262894,-82.873799968510866,0,2023-06-17T13:58:39Z,,,"C14473",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+175,24.649500008672476,-82.893099971115589,0,2023-06-17T13:58:39Z,,,"C1448",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+176,24.649850036948919,-82.893399959430099,0,2023-06-17T13:58:39Z,,,"C1449",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+177,24.649720033630729,-82.893299963325262,0,2023-06-17T13:58:39Z,,,"C1450",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+178,46.000711983069777,-89.07355897128582,487.41751099999999,2020-05-23T03:08:29Z,,,"CAR",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T03:08:29Z,
+179,45.995803959667683,-89.078936967998743,526.105713000000037,2020-05-23T21:55:40Z,,,"CONFUSED",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T21:55:40Z,
+180,24.982398021966219,-80.43654796667397,0,2021-09-02T11:27:17Z,,,"CRF nursery SE corner",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+181,24.695023968815804,-82.795249968767166,0,2023-06-17T13:58:39Z,,,"CT",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+182,24.695128994062543,-82.789203012362123,0,2023-06-17T13:58:39Z,,,"D9999",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+183,45.986964991316199,-89.09293700940907,517.28741500000001,2020-05-23T23:10:04Z,,,"DOPE CAMP",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T23:10:04Z,
+184,45.997509006410837,-89.07877896912396,515.955016999999998,2020-05-23T03:44:12Z,,,"DRS  CAMP",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T03:44:12Z,
+185,25.03286998718977,-80.350349983200431,-1.60297,2022-05-17T20:34:57Z,,,"FRENCH",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-17T20:34:57Z,
+186,24.62074002251029,-82.867399966344237,0,2023-06-17T13:59:13Z,,,"Garden Key",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:13Z,
+187,25.106980009004474,-80.308069987222552,4.956992,2022-05-08T16:58:35Z,,,"GRECIAN",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-08T16:58:35Z,
+188,25.139080015942454,-80.293940026313066,6.32024,2022-05-08T17:03:12Z,,,"HORSESHOE",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-08T17:03:12Z,
+189,24.669680027291179,-82.909119967371225,0,2023-06-17T13:58:39Z,,,"J2856",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+190,24.663060000166297,-82.91202999651432,0,2023-06-17T13:58:39Z,,,"J2858",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+191,24.632369996979833,-82.905350038781762,0,2023-06-17T13:58:39Z,,,"J2859",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+192,25.123550025746226,-80.294939987361431,6.606252,2022-05-08T17:01:35Z,,,"JESUS",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-08T17:01:35Z,
+193,45.987186022102833,-89.092875989153981,522.387206999999989,2020-05-23T22:48:29Z,,,"JUNCT",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T22:48:29Z,
+194,24.697190020233393,-82.863250002264977,0,2023-06-17T13:58:39Z,,,"K1021",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+195,24.712509959936142,-82.792319990694523,0,2023-06-17T13:58:39Z,,,"K1033",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+196,24.661749992519617,-82.845429992303252,0,2023-06-17T13:58:39Z,,,"M1218",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+197,24.640330038964748,-82.898460030555725,0,2023-06-17T13:58:39Z,,,"M1227",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+198,25.073130028322339,-80.392689993605018,-2.538898,2022-05-07T23:20:23Z,,,"MOSQT REEF",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-07T23:20:23Z,
+199,24.562570033594966,-81.400089981034398,0,2021-09-02T11:27:17Z,,,"Mote coral nursery",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+200,24.619079986587167,-82.897399971261621,0,2023-06-17T13:58:39Z,,,"Mutant allele",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+201,25.130480015650392,-80.294489962980151,5.191714,2022-05-08T23:29:29Z,,,"NDRO",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-08T23:29:29Z,
+202,25.01389998011291,-80.374290039762855,20.034067,2022-05-11T22:51:22Z,,,"NE CONCH",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-11T22:51:22Z,
+203,24.627794483676553,-81.399919241666794,0,2021-09-02T11:27:17Z,,,"Newfound Harbor",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+204,24.682840034365654,-82.892190031707287,0,2023-06-17T13:58:39Z,,,"O1292",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+205,24.669509958475828,-82.875190023332834,0,2023-06-17T13:58:39Z,,,"O1298",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+206,24.670099960640073,-82.899900041520596,0,2023-06-17T13:58:39Z,,,"O1313",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+207,24.708239967003465,-82.808560011908412,0,2023-06-17T13:58:39Z,,,"O2263",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+208,45.982572035863996,-89.098021974787116,507.961273000000006,2020-05-23T23:51:54Z,,,"OLDFIRERG",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2020-05-23T23:51:54Z,
+209,24.620650000870228,-82.869667019695044,0,2023-06-17T13:59:14Z,,,"Prolifera Patch",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:14Z,
+210,24.693550011143088,-82.772799963131547,0,2023-06-17T13:59:14Z,,,"Pulaski Shoal Light",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:14Z,
+211,24.702800028026104,-82.798829963430762,0,2023-06-17T13:59:14Z,,,"Pulaski Shoal West",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:59:14Z,
+212,24.68003997579217,-82.899060007184744,0,2023-06-17T13:58:39Z,,,"R1207",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+213,24.702960038557649,-82.871740031987429,0,2023-06-17T13:58:39Z,,,"R1212",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+214,24.632490025833249,-82.875620014965534,0,2023-06-17T13:58:39Z,,,"R1215",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+215,24.721210040152073,-82.781069967895746,0,2023-06-17T13:58:39Z,,,"R1234",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+216,24.629789963364601,-82.945709992200136,0,2023-06-17T13:58:39Z,,,"R2223",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+217,25.047194575890899,-80.465960819274187,0,2021-09-02T11:27:17Z,,,"Rodriguez Key",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+218,24.980649976059794,-80.43883329257369,0,2021-09-02T11:27:17Z,,,"RR Tavernier nursery",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+219,25.70032998919487,-80.096879974007607,0,2021-09-02T11:27:17Z,,,"S1","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+220,24.624914964661002,-82.828094959259033,0,2023-06-17T13:58:39Z,,,"S1208",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+221,24.711745027452707,-82.857624990865588,0,2023-06-17T13:58:39Z,,,"S1226",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+222,24.673929987475276,-82.886350024491549,0,2023-06-17T13:58:39Z,,,"S1254",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+223,25.690779983997345,-80.097580030560493,0,2021-09-02T11:27:17Z,,,"S2","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+224,25.686042029410601,-80.097362017259002,0,2021-09-02T11:27:17Z,,,"S3","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+225,25.67849999293685,-80.118599999696016,0,2021-09-02T11:27:17Z,,,"S4","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+226,25.674899965524673,-80.098416628316045,0,2021-09-02T11:27:17Z,,,"S5","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+227,25.668220007792115,-80.098740002140403,0,2021-09-02T11:27:17Z,,,"S6","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>","<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>735</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DRM_ID</td>
+
+<td>1201</td>
+
+</tr>
+
+<tr>
+
+<td>Latitude</td>
+
+<td>24.455649</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Longitude</td>
+
+<td>-81.905503</td>
+
+</tr>
+
+<tr>
+
+<td>Depth_ft</td>
+
+<td>-40.682416</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Subregion</td>
+
+<td>Lower Keys</td>
+
+</tr>
+
+<tr>
+
+<td>Zone</td>
+
+<td>Forereef</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>habclass</td>
+
+<td>CONT_LR</td>
+
+</tr>
+
+<tr>
+
+<td>Team</td>
+
+<td>Shedd Aquarium</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Priority</td>
+
+<td>Primary</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>",,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+228,25.013269996270537,-80.374860009178519,20.034067,2022-05-11T22:53:10Z,,,"SW CONCH",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-11T22:53:10Z,
+229,24.703339990228415,-82.859570011496544,0,2023-06-17T13:58:39Z,,,"T1247",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+230,24.71342165954411,-82.828405005857348,0,2023-06-17T13:58:39Z,,,"T1269",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+231,24.591594384983182,-82.896736040711403,0,2023-06-17T13:58:39Z,,,"T2253",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+232,24.673179974779487,-82.822110028937459,0,2023-06-17T13:58:39Z,,,"T3013",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+233,24.697239976376295,-82.886150032281876,0,2023-06-17T13:58:39Z,,,"T3021",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+234,24.608869990333915,-82.949483022093773,,2023-06-22T11:07:17Z,,,"The Maze",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-22T11:07:17Z,
+235,24.627329958602786,-82.810820024460554,0,2023-06-17T13:58:39Z,,,"U1029-2",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+236,24.652220020070672,-82.812700001522899,0,2023-06-17T13:58:39Z,,,"U1465",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+237,24.688030024990439,-82.772850003093481,0,2023-06-17T13:58:39Z,,,"U3026-2",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+238,25.676261018961668,-80.098680574446917,0,2021-09-02T11:27:17Z,,,"UM coral nursery",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+239,24.698898000642657,-82.778532011434436,0,2023-06-17T13:58:39Z,,,"V1501",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+240,24.583649011328816,-82.900318969041109,0,2023-06-17T13:58:39Z,,,"V1509",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+241,24.718656996265054,-82.824774971231818,0,2023-06-17T13:58:39Z,,,"V1517",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+242,24.666259959340096,-82.789925029501319,0,2023-06-17T13:58:39Z,,,"V1523",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+243,24.611552031710744,-82.871113987639546,0,2023-06-17T13:58:39Z,,,"V1524",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+244,24.601089991629124,-82.948474008589983,0,2023-06-17T13:58:39Z,,,"V1548",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+245,24.587879022583365,-82.887053014710546,0,2023-06-17T13:58:39Z,,,"V2510",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+246,24.648104002699256,-82.87215200252831,0,2023-06-17T13:58:39Z,,,"V2526",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-17T13:58:39Z,
+247,24.452732987701893,-81.726566702127457,0,2021-09-02T11:27:17Z,,,"Vandenburg",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-09-02T11:27:17Z,
+248,25.044780001044273,-80.369679993018508,3.382403,2022-05-12T22:44:35Z,,,"W B NORTH",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-12T22:44:35Z,
+249,25.044550001621246,-80.696129975840449,3.350461,2022-05-12T22:41:57Z,,,"WHITE B N",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-12T22:41:57Z,
+250,25.044189998880029,-80.368509963154793,-1.374006,2022-05-07T23:16:34Z,,,"WHITE BANK",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-07T23:16:34Z,
+251,25.040180012583733,-80.371370036154985,-1.374006,2022-05-07T23:18:44Z,,,"WHITE BSW",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-07T23:18:44Z,
+252,24.623600011691451,-82.942899959161878,,2023-06-22T11:09:05Z,,,"Windjammer",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2023-06-22T11:09:05Z,
+253,25.045179985463619,-80.395040027797222,-2.538898,2022-05-07T23:21:53Z,,,"WOLF REEF",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2022-05-07T23:21:53Z,
+
+Address
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
+
+PhoneNumber
+wptID,Category,value,
+
+Categories
+wptID,Category,
+
+trk
+ID,name,cmt,desc,src,number,type,DisplayColor,
+
+trkseg
+ID,trkID,
+
+trkpt
+ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,

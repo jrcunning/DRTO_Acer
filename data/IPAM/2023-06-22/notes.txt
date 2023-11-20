@@ -1,0 +1,9 @@
+Rack Colors (8 in each):
+Pink
+Orange
+Yellow
+Blue
+Florida (orange/green)
+
+Tank Format:
+ 1_30_Pink

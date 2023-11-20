@@ -1,0 +1,66 @@
+---
+title: "coral_GPS_from_tracks.Rmd"
+author: "ross"
+date: "8/20/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rio)
+library(parzer)
+library(tidyverse)
+library(lubridate)
+library(magrittr)
+```
+
+
+
+```{r}
+# Read in coral collection info
+md <- rio::import("Collections.xlsx", sheet = "CollectionNotes") %>% 
+  separate(time, c(NA,"time"), sep = " ") %>% 
+  unite(date_time, dateCollected, time, sep = " ") %>%
+  mutate(date_time = ymd_hms(date_time))
+
+# Read in GPS tracks
+
+## List GPS track files
+gps_track_files <- list.files("data/GPS", pattern = "*.csv", full.names = TRUE)
+
+## Read in all GPS track files into single dataframe
+gps_tracks <- NULL
+for (i in gps_track_files) {
+  serial <- substr(i,nchar("data/GPS/GPS_") + 1, nchar("data/GPS/GPS_") + 4)
+  gps_single <- rio::import(i, skip = 34)
+  add = max(gps_single$ID)
+  gps <- rio::import(i, skip = (40 + (add * 2))) %>% 
+    dplyr::mutate(gps_id = as.numeric(serial)) %>% 
+    relocate(gps_id) 
+  gps_tracks <- plyr::rbind.fill(gps_tracks, gps)
+}
+
+## Format date and time in correct time zone for GPS tracks
+gps_tracks <- gps_tracks %>%
+  unique() %>% 
+  select(gps_id, time, lat, lon) %>%
+  mutate(date_time = as_datetime(time, tz = "US/Eastern"),
+         date_time_min = format(date_time, "%H:%M"))
+
+# Set seconds values for all times to zero
+second(gps_tracks$date_time) <- 0
+
+# Get last lat/lon recorded for each discrete minute
+gps_tracks <- gps_tracks %>%
+  group_by(gps_id, date_time) %>%
+  summarise(across(everything(), last)) %>% 
+  dplyr::select(-c(date_time_min)) %>% 
+  dplyr::mutate(date_time = lubridate::ymd_hms(date_time)) 
+
+# Pull coral lat/lon from gps tracks based on date/time sampled (recorded as the nearest minute)
+df <- left_join(md, gps_tracks, by = c("gps" = "gps_id", "date_time"))
+ 
+# Write lat/lon to file
+  write_csv("../Outputs/GPS_collectionCoordinates.csv")
+```
