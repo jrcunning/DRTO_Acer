@@ -106,14 +106,19 @@ cbasstempsfig <- ggplot(cbasstemps, aes(x = dttm, y = temp, group = max_temp)) +
 # Import CBASS metadata (positions of corals on racks, and CBASS temperatures of each rack)
 rack_map <- readxl::read_xlsx("RackMaps.xlsx", sheet = "long") %>%
   mutate(date = as_date(as.character(dateCBASS))) %>%
-  select(uniquePosition, dateCBASS, CBASSrun, rack.col, rack.position, fieldTag)
+  select(uniquePosition, date, CBASSrun, rack_color = rack.col, position = rack.position, fieldTag)
 ```
 
 ### Import I-PAM data from CBASS
 ```{r}
 # Import PAM data
+# And do some things in parallel...
+library(furrr)
+plan(multisession, workers = 8)
+
 # List all PAM files
-pamfiles <- list.files(path = "data/IPAM", pattern = "*.csv", recursive = TRUE, full.names = TRUE)
+pamfiles <- list.files(path = "data/IPAM", pattern = "\\d+_\\d+_.*.csv", 
+                       recursive = TRUE, full.names = TRUE)
 
 # Import data from each file
 pam1 <- pamfiles %>%
@@ -122,16 +127,17 @@ pam1 <- pamfiles %>%
   mutate(file_id = basename(pamfiles[as.numeric(file_id)]),
          date = as_date(date, format = "%d.%m.%y"))
 
-# # For files that have multiple sat pulses -- keep the last one only
+# # For files that have multiple sat pulses -- keep the last one only (highest "no." column)
 pam2 <- pam1 %>%
   group_by(file_id, date) %>%
   filter(no == max(no)) %>%
+  slice_head(n = 1) %>%     # for duplicated file_id/date (data read in multiple times)
   ungroup()
 
 # For each source file, convert to long form data with F, FM, and YII for each AOI
 pam3 <- pam2 %>%
   nest(-file_id, -date) %>%
-  mutate(data2 = map(data, ipam_convert)) %>%
+  mutate(data2 = future_map(data, ipam_convert)) %>%
   unnest(data2) %>%
   group_by(file_id, date) %>%
   select(file_id, date, time, aoi, var, value)
@@ -139,32 +145,36 @@ pam3 <- pam2 %>%
 # Get rack temp/color info from file_id
 pam4 <- pam3 %>%
   separate(file_id, into = c("rack_no", "max_temp", "rack_color"))
-  
 
-# Join PAM data with rack order information (which PAM file corresponds to which rack of corals)
-pam <- pam1 %>%
-  group_by(rack, date) %>%
-  mutate(position = ceiling(as.numeric(aoi)/2)) %>%
+# Get "position" of each coral based on aoi -- assuming only one aoi per coral in order
+pam5 <- pam4 %>%
+  group_by(rack_no, date) %>%
+  mutate(position = as.numeric(aoi)) %>%
   ungroup()
 
-pam <- left_join(pam, md) %>% left_join(corals)
+# Join PAM data with rack order information (which PAM file corresponds to which rack of corals)
+pam <- left_join(rack_map, pam5, by = c("date", "rack_color", "position"))
 
-# # Double-check: should be 2 measurements of Fv/Fm per genet per temperature
+# # Double-check: should be 1 measurements of Fv/Fm per genet per temperature
 # pam %>%
 #   filter(var == "y_ii_") %>%
-#   count(tag_no, temp) %>%
+#   count(fieldTag, max_temp) %>%
 #   arrange(-n)
-# ## great, all have 2 meas.
+# ## great, all have 1 meas.
+
+# Filter only DRTO Acer
+pam <- pam %>%
+  filter(str_detect(fieldTag, "^B.*"))
 ```
 
 ### Fit dose-response curves
 ```{r}
 # Get Fv/Fm data and tidy
 df <- pam %>%
-  mutate(max_temp = as.numeric(temp)) %>%
   pivot_wider(names_from = var, values_from = value) %>%
-  mutate(fvfmraw = y_ii_, fvfm = y_ii_) %>%
-  select(date, tag_no, max_temp, f, fm, fvfmraw, fvfm)
+  mutate(fvfmraw = y_ii_, fvfm = y_ii_,
+         max_temp = as.numeric(max_temp)) %>%
+  select(date, fieldTag, max_temp, f, fm, fvfmraw, fvfm)
 
 # Define function to fit 3-parameter LL model to data and return NULL if fitting error
 ll3 <- function(data) {
@@ -185,15 +195,16 @@ initmods <- df %>%
 
 # Extract ed50 parameter values from model fits
 ed50 <- initmods %>% 
-  select(tag_no, pars) %>%
+  select(fieldTag, pars) %>%
   unnest(pars) %>%
   filter(term == "ED50")
 
 # hist(ed50$estimate, breaks = 30)
+mean(ed50$estimate)
 
 # Collect raw data, fitted values, and diagnostics
 vals <- initmods %>%
-  select(tag_no, pred) %>%
+  select(fieldTag, pred) %>%
   unnest(pred) %>%
   full_join(ed50) %>%
   full_join(df) %>%
@@ -205,20 +216,18 @@ vals <- initmods %>%
 ```{r drc_diagnostics}
 # # Identify problematic data points based on cook's distance and residuals
 counts <- vals %>%
-  mutate(geno = tag_no) %>%
-  group_by(geno) %>%
+  group_by(fieldTag) %>%
   summarise(n = sum(!is.na(fvfm)))
 dff <- vals %>%
-  mutate(geno = tag_no) %>%
   left_join(counts) %>%
-  group_by(geno) %>%
+  group_by(fieldTag) %>%
   mutate(cooksd.thresh = 4/n) %>%   # Calculate cook's distance threshold as 4/n
   mutate(max_to_remove = floor(n * 0.15)) %>%
   ungroup() %>%
   mutate(problem = case_when(.cooksd > cooksd.thresh ~ "high cook's distance",
                              abs(.resid) > 0.5 ~ "high residual",
                              TRUE ~ "none")) %>%
-  group_by(geno, outlier = problem %in% c("high cook's distance", "high residual")) %>%
+  group_by(fieldTag, outlier = problem %in% c("high cook's distance", "high residual")) %>%
   mutate(n.outliers = n(),
          rank.out = order(.cooksd, decreasing = TRUE)) %>%
   ungroup() %>%
@@ -227,7 +236,7 @@ dff <- vals %>%
 
 # Refit models without problematic points
 fmods <- dff %>%
-  select(geno, max_temp, f, fm, fvfmraw, problem, fvfm) %>%
+  select(fieldTag, max_temp, f, fm, fvfmraw, problem, fvfm) %>%
   nest(data = c(max_temp, f, fm, fvfmraw, fvfm, problem)) %>%
   # Fit the model to each coral
   mutate(ll3 = map(data, tryll3)) %>%
@@ -237,112 +246,128 @@ fmods <- dff %>%
 
 # Extract ed50 parameter values from model fits
 fed50 <- fmods %>%
-  select(geno, pars) %>%
+  select(fieldTag, pars) %>%
   unnest(pars) %>%
   filter(term == "ED50")
 
 # Collect raw data, fitted values, and ed50 estimates
 fvals <- fmods %>%
-  select(geno, pred) %>%
+  select(fieldTag, pred) %>%
   unnest(pred) %>%
   full_join(fed50) %>%
-  full_join(select(dff, geno, max_temp, f, fm, fvfmraw, problem, fvfm)) %>%
+  full_join(select(dff, fieldTag, max_temp, f, fm, fvfmraw, problem, fvfm)) %>%
   rename(ed50 = estimate)
 ```
 
 ### Plot dose response curves for each genotype
 ```{r plot, fig.width = 10, fig.height = 10}
-ed50 <- ed50 %>%
-  mutate(geno = factor(tag_no))
+# ed50 <- ed50 %>%
+#   mutate(geno = factor(tag_no))
 
 vals <- vals %>%
-  mutate(geno = fct_reorder(factor(tag_no), ed50, .fun = mean))
+  mutate(fieldTag = fct_reorder(factor(fieldTag), ed50, .fun = mean))
 fvals <- fvals %>%
-  mutate(geno = fct_reorder(factor(geno), ed50, .fun = mean, na.rm = TRUE))
+  mutate(fieldTag = fct_reorder(factor(fieldTag), ed50, .fun = mean, na.rm = TRUE))
 
 # Get finer scale fitted values for plotting
-pred <- fmods %>%
+pred <- initmods %>%
   mutate(pred = map(ll3, ~augment(.x, newdata = data.frame(max_temp = seq(28.5, 40, 0.001))))) %>%
-  select(geno, pred) %>%
+  select(fieldTag, pred) %>%
   unnest(pred) %>%
-  mutate(geno = factor(geno))
+  mutate(fieldTag = factor(fieldTag))
+fpred <- fmods %>%
+  mutate(pred = map(ll3, ~augment(.x, newdata = data.frame(max_temp = seq(28.5, 40, 0.001))))) %>%
+  select(fieldTag, pred) %>%
+  unnest(pred) %>%
+  mutate(fieldTag = factor(fieldTag))
 
 # Plot all drc's on separately
-alldrc <- ggplot(fvals, aes(x = max_temp, y = fvfmraw)) +
-  facet_wrap(~geno) +
-  geom_point(aes(shape = problem)) +
-  geom_line(aes(y = .fitted), data = pred) +
-  #geom_line(aes(y = .fitted), data = vals, lty = 2) +
+alldrc <- ggplot(fvals, aes(x = max_temp, y = fvfm)) +
+  facet_wrap(~fieldTag) +
+  geom_point(pch = 1) +
+  geom_point(pch = 4, data = vals) +
+  geom_line(aes(y = .fitted), data = fpred) +
+  geom_line(aes(y = .fitted), data = pred, lty = 2) +
   geom_vline(aes(xintercept = estimate), data = fed50, lty = 1, lwd = 0.1) +
-  #geom_vline(aes(xintercept = estimate), data = ed50, lty = 2, lwd = 0.1) +
+  geom_vline(aes(xintercept = estimate), data = ed50, lty = 2, lwd = 0.1) +
   geom_text(aes(x = estimate, y = 0.05, label = round(estimate, 2)), data = fed50,
             size = 2, nudge_x = -1.5) +
-  scale_shape_manual(values = c(4, 1)) +
+  #scale_shape_manual(values = c(4, 1)) +
+  xlim(30, 38) +
   theme_custom() +
-  theme(legend.position = "none") +
+  theme(legend.position = "none", strip.text = element_text(size = 2)) +
   labs(x = "Temperature (°C)", y = "Fv/Fm"); alldrc
 
-ggsave(alldrc, filename = "output/FigureS1.png", width = 183, height = 183, units = "mm")
+#ggsave(alldrc, filename = "output/FigureS1.png", width = 183, height = 183, units = "mm")
 
 # Plot all curves together
-drcs <- ggplot(pred, aes(x = max_temp, y = .fitted, group = geno)) +
+drcs <- ggplot(pred, aes(x = max_temp, y = .fitted, group = fieldTag)) +
   geom_line(alpha = 0.7, lwd = 0.25) +
   scale_x_continuous(limits = c(32, 38), expand = c(0, 0)) +
   theme_custom() +
   theme(legend.position = "none"); drcs
 
-# ed50hist <- ggplot(fed50, aes(x = estimate)) +
-#   geom_histogram(alpha = 0.5, position = "stack", breaks = seq(32,38.5,0.5)) +
-#   scale_x_continuous(limits = c(32, 38), expand = c(0, 0)) +
-#   theme_custom(); ed50hist
+# Histogram of ED50s
+left_join(ed50, rack_map) %>%
+  ggplot(aes(x = estimate, fill = factor(date))) +
+  geom_histogram(alpha = 0.5, position = "stack", breaks = seq(32,38.5,0.25)) +
+  scale_x_continuous(limits = c(32, 38), expand = c(0, 0)) +
+  theme_custom()
 
-# drc_ed50_fig <- drcs + 
-#   geom_histogram(data = fed50, inherit.aes = FALSE, alpha = 0.5,
-#                  breaks = seq(32,38,0.5),
-#                  aes(x = estimate, y = ..count../15)) +
-#   scale_y_continuous(sec.axis = sec_axis(trans=~.*15, name = "Count of genet ED50s")) +
-#   labs(x = "Temperature (°C)", y = "Fv/Fm"); drc_ed50_fig
-# 
-# ggsave(drc_ed50_fig, filename = "output/drc_ed50.png", width = 80, height = 60, units = "mm")
+# Test for difference among dates
+resdf <- left_join(ed50, rack_map)
+mod <- lm(estimate ~ factor(date), data = resdf)
+anova(mod)
 
-# Plot all curves together with labels for each colony
-library(ggrepel)
+# Use initmods for now (not filtered). Only one AOI per coral, so can't afford to lose any datapoints. Filter out some poor fits based on initmods or when n < 8 (need to go back and check why we are missing data for these).
+goods <- initmods %>%
+  mutate(n = map_dbl(data, nrow)) %>%
+  filter(n > 5) %>%
+  pull(fieldTag)
 
-fed50.2 <- fed50 %>% mutate(geno = factor(geno)) %>%
-  left_join(pred) %>%
-  mutate(closest = abs(estimate - max_temp)) %>%
-  group_by(geno) %>%
-  filter(closest == min(closest)) %>%
-  ungroup()
-top <- fed50.2 %>% slice_max(estimate, n = 10)
-bottom <- fed50.2 %>% slice_min(estimate, n = 10)
+ed50ss <- ed50 %>%
+  filter(fieldTag %in% goods) %>%
+  left_join(rack_map)
 
-drc_ed50_fig2 <- drcs +
-  geom_line(alpha = 1, lwd = 0.25, color = "black") +
-  scale_x_continuous(limits = c(32, 38.5), expand = c(0, 0)) +
-  geom_text_repel(data = top, aes(x = estimate, y = .fitted, label = geno), size = 2.4,
-                  max.overlaps = Inf, box.padding = 0.25, segment.size = 0.1, direction = "x", 
-                  xlim = c(34.9, 38.5), ylim = c(0.47, 0.47), force = 1, seed = 15, segment.linetype = 3) +
-  geom_text_repel(data = bottom, aes(x = estimate, y = .fitted, label = geno), size = 2.4,
-                  max.overlaps = Inf, box.padding = 0.25, point.padding = 0, force = 10, direction = "x",
-                  xlim = c(32, 35.8), ylim = c(0.01, 0.01), segment.size = 0.1, seed = 5, segment.linetype = 3) +
-  labs(x = "Temperature (°C)", y = "Fv/Fm"); drc_ed50_fig2
-  
-# ggsave(drc_ed50_fig2, filename = "output/drc_ed50.png", width = 80, height = 60, units = "mm")
-
-# cbass_classic_results <- plot_grid(drc_ed50_fig2, classicresfig, nrow = 1, labels = "auto")
-# ggsave(cbass_classic_results, filename = "output/cbass_classic_results2.png", 
-#        width = 183, height = 80, units = "mm")
-
+# Histogram of Filtered ED50s
+ggplot(ed50ss, aes(x = estimate, fill = factor(date))) +
+  geom_histogram(alpha = 0.5, position = "stack", breaks = seq(32,38.5,0.25)) +
+  scale_x_continuous(limits = c(32, 38), expand = c(0, 0)) +
+  theme_custom()
 ```
 
-### Write ED50s to file
+### Import collection information
 ```{r}
-fed50 %>%
-  mutate(tag_no = geno) %>%
-  full_join(ed50, by = c("tag_no", "term", "curve")) %>%
-  select(geno = tag_no, ed50 = estimate.y, std.error = std.error.y,
-         ed50.f = estimate.x, std.error.f = std.error.x) %>%
-  mutate(across(2:5, round, 4)) %>%
-  write_csv(path = "data/classic_cbass/processed/ed50.csv")
+md <- readxl::read_xlsx("Collections.xlsx", sheet = "CollectionNotes") %>%
+  select(fieldTag, dateCollected, site, depth_ft)
+
+res <- left_join(ed50ss, md)
+
+
+# Does ED50 vary across depth?
+ggplot(res, aes(x = depth_ft, y = estimate)) +
+  geom_point(aes(color = factor(date))) +
+  geom_smooth(method = "lm")
+
+mod <- lm(estimate ~ depth_ft, data = res)
+anova(mod)
+
+date_means <- res %>%
+  group_by(date) %>%
+  summarize(mean = mean(estimate),
+            sd = sd(estimate))
+
+# Does ED50 vary among sites?
+ggplot(res, aes(x = site, y = estimate, group = date)) +
+  facet_grid(~date, scales = "free_x") +
+  geom_hline(aes(yintercept = mean), data = date_means) +
+  geom_rect(aes(ymax = mean + sd, ymin = mean - sd), xmin = 0, xmax = 10, 
+              data = date_means, alpha = 0.3, inherit.aes = FALSE) +
+  #geom_boxplot() +
+  geom_jitter(alpha = 0.7, width = 0.15) +
+  theme(axis.text.x = element_text(angle = 90))
+
+mod <- lm(estimate ~ depth_ft, data = res)
+anova(mod)
 ```
+
