@@ -105,8 +105,9 @@ cbasstempsfig <- ggplot(cbasstemps, aes(x = dttm, y = temp, group = max_temp)) +
 ```{r}
 # Import CBASS metadata (positions of corals on racks, and CBASS temperatures of each rack)
 rack_map <- readxl::read_xlsx("RackMaps.xlsx", sheet = "long") %>%
-  mutate(date = as_date(as.character(dateCBASS))) %>%
-  select(uniquePosition, date, CBASSrun, rack_color = rack.col, position = rack.position, fieldTag)
+  mutate(date = as_date(as.character(dateCBASS)),
+         rack_color = tolower(rack.col)) %>%
+  select(uniquePosition, date, CBASSrun, rack_color, position = rack.position, fieldTag)
 ```
 
 ### Import I-PAM data from CBASS
@@ -150,6 +151,8 @@ pam4 <- pam3 %>%
 pam5 <- pam4 %>%
   group_by(rack_no, date) %>%
   mutate(position = as.numeric(aoi)) %>%
+  # Make all colors lowercase!
+  mutate(rack_color = tolower(rack_color)) %>%
   ungroup()
 
 # Join PAM data with rack order information (which PAM file corresponds to which rack of corals)
@@ -165,6 +168,13 @@ pam <- left_join(rack_map, pam5, by = c("date", "rack_color", "position"))
 # Filter only DRTO Acer
 pam <- pam %>%
   filter(str_detect(fieldTag, "^B.*"))
+
+
+
+# # Why is data missing from B14, B32, B37, B45, B47, B48 from 6/21 CBASS
+# #### it was because case mismatch in rack color btw. data and metadata
+# pam %>% filter(fieldTag == "B14")
+# rack_map %>% filter(fieldTag == "B14")
 ```
 
 ### Fit dose-response curves
@@ -298,6 +308,28 @@ alldrc <- ggplot(fvals, aes(x = max_temp, y = fvfm)) +
   theme(legend.position = "none", strip.text = element_text(size = 2)) +
   labs(x = "Temperature (°C)", y = "Fv/Fm"); alldrc
 
+# Subset for Luisa
+ggplot(filter(fvals, fieldTag %in% c("B14", "B32", "B37", "B45",
+                                     "B47", "B48")), aes(x = max_temp, y = fvfm)) +
+  facet_wrap(~fieldTag) +
+  #geom_point(pch = 1) +
+  geom_point(pch = 1, data = filter(vals, fieldTag %in% c("B14", "B32", "B37", "B45",
+                                     "B47", "B48"))) +
+  #geom_line(aes(y = .fitted), data = filter(fpred, fieldTag %in% c("B14", "B32", "B37", "B45", "B47", "B48"))) +
+  geom_line(aes(y = .fitted), data = filter(pred, fieldTag %in% c("B14", "B32", "B37", "B45",
+                                     "B47", "B48")), lty = 2) +
+  #geom_vline(aes(xintercept = estimate), data = filter(fed50, fieldTag %in% c("B14", "B32", "B37", "B45", "B47", "B48")), lty = 1, lwd = 0.1) +
+  geom_vline(aes(xintercept = estimate), data = filter(ed50, fieldTag %in% c("B14", "B32", "B37", "B45",
+                                     "B47", "B48")), lty = 2, lwd = 0.1) +
+  geom_text(aes(x = estimate, y = 0.05, label = round(estimate, 2)), data = filter(ed50, fieldTag %in% c("B14", "B32", "B37", "B45",
+                                     "B47", "B48")),
+            size = 2, nudge_x = -1.5) +
+  #scale_shape_manual(values = c(4, 1)) +
+  xlim(30, 38) +
+  theme_custom() +
+  theme(legend.position = "none", strip.text = element_text(size = 10)) +
+  labs(x = "Temperature (°C)", y = "Fv/Fm")
+
 #ggsave(alldrc, filename = "output/FigureS1.png", width = 183, height = 183, units = "mm")
 
 # Plot all curves together
@@ -329,11 +361,22 @@ ed50ss <- ed50 %>%
   filter(fieldTag %in% goods) %>%
   left_join(rack_map)
 
+ed50ss %>%
+  select(fieldTag, ed50 = estimate, std.error, date) %>%
+  write_csv(file = "Outputs/ed50s.csv")
+
 # Histogram of Filtered ED50s
 ggplot(ed50ss, aes(x = estimate, fill = factor(date))) +
   geom_histogram(alpha = 0.5, position = "stack", breaks = seq(32,38.5,0.25)) +
   scale_x_continuous(limits = c(32, 38), expand = c(0, 0)) +
   theme_custom()
+
+ggplot(ed50ss, aes(x = estimate)) +
+  geom_histogram(alpha = 0.5, position = "stack", breaks = seq(32,38.5,0.1)) +
+  scale_x_continuous(limits = c(33.75, 36.5), expand = c(0, 0)) +
+  theme_custom() +
+  labs(x = "ED50 (°C)", y = "Number of colonies",
+       title = "Thermal tolerance of Dry Tortugas A. cervicornis, June 2023")
 ```
 
 ### Import collection information
