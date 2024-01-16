@@ -309,26 +309,39 @@ alldrc <- ggplot(fvals, aes(x = max_temp, y = fvfm)) +
   labs(x = "Temperature (°C)", y = "Fv/Fm"); alldrc
 
 # Subset for Luisa
-ggplot(filter(fvals, fieldTag %in% c("B14", "B32", "B37", "B45",
-                                     "B47", "B48")), aes(x = max_temp, y = fvfm)) +
+ggplot(filter(vals, fieldTag %in% c("B80", "B75", "B73", "B37", "B32", "B47")), aes(x = max_temp, y = fvfm)) +
   facet_wrap(~fieldTag) +
   #geom_point(pch = 1) +
-  geom_point(pch = 1, data = filter(vals, fieldTag %in% c("B14", "B32", "B37", "B45",
-                                     "B47", "B48"))) +
+  geom_point(pch = 1, data = filter(vals, fieldTag %in% c("B80", "B75", "B73", "B37", "B32", "B47"))) +
   #geom_line(aes(y = .fitted), data = filter(fpred, fieldTag %in% c("B14", "B32", "B37", "B45", "B47", "B48"))) +
-  geom_line(aes(y = .fitted), data = filter(pred, fieldTag %in% c("B14", "B32", "B37", "B45",
-                                     "B47", "B48")), lty = 2) +
+  geom_line(aes(y = .fitted), data = filter(pred, fieldTag %in% c("B80", "B75", "B73", "B37", "B32", "B47")), lty = 2) +
   #geom_vline(aes(xintercept = estimate), data = filter(fed50, fieldTag %in% c("B14", "B32", "B37", "B45", "B47", "B48")), lty = 1, lwd = 0.1) +
-  geom_vline(aes(xintercept = estimate), data = filter(ed50, fieldTag %in% c("B14", "B32", "B37", "B45",
-                                     "B47", "B48")), lty = 2, lwd = 0.1) +
-  geom_text(aes(x = estimate, y = 0.05, label = round(estimate, 2)), data = filter(ed50, fieldTag %in% c("B14", "B32", "B37", "B45",
-                                     "B47", "B48")),
+  geom_vline(aes(xintercept = estimate), data = filter(ed50, fieldTag %in% c("B80", "B75", "B73", "B37", "B32", "B47")), lty = 2, lwd = 0.1) +
+  geom_text(aes(x = estimate, y = 0.05, label = round(estimate, 2)), data = filter(ed50, fieldTag %in% c("B80", "B75", "B73", "B37", "B32", "B47")),
             size = 2, nudge_x = -1.5) +
   #scale_shape_manual(values = c(4, 1)) +
   xlim(30, 38) +
   theme_custom() +
   theme(legend.position = "none", strip.text = element_text(size = 10)) +
   labs(x = "Temperature (°C)", y = "Fv/Fm")
+
+
+gps <- read_csv("Outputs/GPS_collectionCoordinates.csv")
+gps
+
+luisamd <- ed50 %>% 
+  filter(fieldTag %in% c("B80", "B75", "B73", "B37", "B32", "B47")) %>%
+  left_join(md) %>%
+  left_join(gps) %>%
+  select(fieldTag, ed50_estimate = estimate, std.error, dateCollected, site, depth_ft, lat, lon)
+
+
+
+luisa <- read_csv("Luisa_samples_20240116.csv")
+
+luisa2 <- left_join(luisa, luisamd)
+
+write_csv(luisa2, path = "Outputs/NU_metadata_20240116.csv")
 
 #ggsave(alldrc, filename = "output/FigureS1.png", width = 183, height = 183, units = "mm")
 
